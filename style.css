@@ -1,0 +1,128 @@
+body{ 
+  background-color: #eeeded;
+}
+.header {
+  width: 550px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 600px;
+  margin-top: 200px;
+  
+}
+.header1 {
+  padding: 100px;
+}
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 15px;
+}
+h3 {
+  font-size: 17px;
+}
+img {
+  width: 70px;
+  border-radius: 50%;
+}
+.profile {
+  display: flex;
+}
+.image2 {
+  line-height: 0.5;
+  padding: 10px;
+}
+input {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.lock {
+  position: relative;
+}
+.lock .fa-lock {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #0a0a30;
+}
+
+.lock input:focus + .fa-lock{
+  opacity: 0;
+  pointer-events: none;
+  transition: all .1s ease;
+}
+
+.buton{
+  display: flex;
+  padding-top: 8px;
+ 
+  
+}
+.buton i{
+  font-size: 45px;
+  color: #0a0a30;
+}
+.buton .btn{
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #0a0a30;
+  color: white;
+
+}
+.buton .btn1{
+  padding-left: 65px;
+}
+.buton p{
+  padding-left: 5px;
+  font-weight: bold;
+}
+.p p{
+  color: #0a0a30;
+  text-decoration:underline;
+  font-weight: bold;
+}
+
+.toggle input{
+  display:none;
+}
+.toggle label{
+  display: block;
+  width:60px;
+  height:30px;
+  background-color:#fff;
+  border-radius:30px;
+  border: 5px solid;
+  position:relative;
+  transition: all .4s ease;
+}
+.toggle label:before{
+  position:absolute;
+  content:"";
+  top:50%;
+  left:5px;
+  transform:translateY(-50%);
+  display:block;
+  width:20px;
+  height:20px;
+  background-color:#000;
+  border-radius:50%;
+  transition: all .4s ease;
+}
+
+.toggle input:checked + label{
+  background-color:#000;
+  transition: all .4s ease;
+}
+
+.toggle input:checked+label:before{
+  background-color: #fff;
+  left:35px;
+  transition: all .4s ease-in-out;
+}
